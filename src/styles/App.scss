@@ -1,0 +1,68 @@
+@import './variables.scss';
+
+.App {
+	text-align: center;
+	padding: $padding32;
+}
+
+
+
+a {
+	text-decoration: none;
+	padding: $space16;
+}
+
+.card-wrapper {
+	width: 250px;
+	height: fit-content;
+	background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+	border-radius: 8px;
+	box-shadow: 7px 5px 5px rgba(252, 252, 252, 0.7);
+
+	h1 {
+		color: $text-color;
+		margin: 0;
+		text-transform: capitalize;
+	}
+}
+
+.card-wrapper:hover {
+	background: transparent;
+	border: 1px solid $text-color;
+
+}
+
+.card-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: $space16;
+}
+
+.detail-page {
+	img {
+		width: 200px;
+		border: 1px solid white;
+		box-shadow: 7px 5px 5px rgba(252, 252, 252, 0.7);
+	}
+}
+
+.Stats_Data, .Abilities_Data {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 25px;
+	color: $text-color;
+}
+
+.poke-page-name, .abilities-h3, .stats-h3, p {
+	color: $text-color;
+}
+.poke-page-name{
+	text-transform: capitalize;
+}
+
+.Abilities{
+	margin-top: 30px;
+	text-transform: capitalize;
+}
